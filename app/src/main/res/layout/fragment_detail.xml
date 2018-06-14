@@ -4,25 +4,18 @@
     <data>
         <variable
             name="vm"
-            type="com.jskierbi.codelab_navigation.MainFragmentVm" />
+            type="com.jskierbi.codelab_navigation.DetailFragmentVm" />
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="#6fc48d">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@{vm.title}" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="@{(view) -> vm.showDetails(view)}"
-            android:text="Show details" />
+            android:text="Detail view!" />
 
     </LinearLayout>
 
