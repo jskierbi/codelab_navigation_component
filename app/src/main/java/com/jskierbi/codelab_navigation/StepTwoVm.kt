@@ -5,9 +5,10 @@ import android.arch.lifecycle.AndroidViewModel
 import android.view.View
 import androidx.navigation.findNavController
 
-class MainFragmentVm(app: Application) : AndroidViewModel(app) {
+class StepTwoVm(app: Application) : AndroidViewModel(app) {
 
-  val title = "Hey, I'm VM provided title!"
+  val title = "Step 2"
 
-  fun gotoStep1(view: View) = view.findNavController().navigate(R.id.goto_step_1)
+  fun done(view: View) = view.findNavController().popBackStack(R.id.mainFragment, false)
+
 }

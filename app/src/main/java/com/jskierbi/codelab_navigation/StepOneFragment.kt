@@ -6,13 +6,12 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.jskierbi.codelab_navigation.databinding.FragmentDetailBinding
+import com.jskierbi.codelab_navigation.databinding.FragmentStep1Binding
 
-class DetailFragment : Fragment() {
-
+class StepOneFragment : Fragment() {
   override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-    val binding = FragmentDetailBinding.inflate(inflater)
-    binding.vm = ViewModelProviders.of(this).get(DetailFragmentVm::class.java)
+    val binding = FragmentStep1Binding.inflate(inflater)
+    binding.vm = ViewModelProviders.of(this).get(StepOneVm::class.java)
     return binding.root
   }
 }
