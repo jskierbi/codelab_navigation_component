@@ -9,5 +9,8 @@ class MainFragmentVm(app: Application) : AndroidViewModel(app) {
 
   val title = "Hey, I'm VM provided title!"
 
-  fun gotoStep1(view: View) = view.findNavController().navigate(R.id.goto_step_1)
+  fun gotoStep1(view: View) {
+    val action = MainFragmentDirections.goto_step_1(10, 10)
+    view.findNavController().navigate(action)
+  }
 }
