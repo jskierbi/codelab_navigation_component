@@ -16,7 +16,7 @@ class StepOneFragment : Fragment() {
   override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
     val binding = FragmentStep1Binding.inflate(inflater)
     binding.vm = ViewModelProviders.of(this).get(StepOneVm::class.java)
-    Log.d(">>>", "Safe args: ${safeArgs.configType}, ${safeArgs.enumValue}")
+    Log.d(">>>", "Safe args: ${safeArgs.configType}, ${safeArgs.enumValue}, ${safeArgs.optionalString}")
     return binding.root
   }
 }

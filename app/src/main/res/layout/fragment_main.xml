@@ -29,6 +29,12 @@
             android:onClick="@{(view) -> vm.gotoStep1(view)}"
             android:text="Run Setup" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> vm.createNotification()}"
+            android:text="Create STEP 2 deeplink" />
+
     </LinearLayout>
 
 </layout>
